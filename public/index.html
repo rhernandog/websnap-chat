@@ -18,22 +18,53 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-		<title>Node Chat App</title>
-
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-
+		<title>Login Page</title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">		
+		
+		<link rel="stylesheet" href="css/styles.css">
 
 	</head>
 
 	<body>
 
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<h1 class="text-center">Node Chat App</h1>
+		<div class="container-fluid login-wrap">
+			<div class="row justify-content-center">
+				<div class="col-12 col-md-6 col-lg-4 login-form-container" id="login-form-container">
+
+					<!-- form card -->
+					<div class="card">
+						<div class="card-body">
+							<h4 class="card-title text-center">Join Chat</h4>
+							
+							<!-- login form -->
+							<form id="login-form" action="/chat.html">
+								<div class="form-group">
+									<label for="displayName">Display Name</label>
+									<input type="text" class="form-control" name="displayName" id="displayName" autofocus placeholder="Visible name">
+								</div>
+								<div class="form-group">
+									<label for="chatRoom">Chat Room</label>
+									<input type="text" class="form-control" name="chatRoom" id="chatRoom" placeholder="Room name">
+								</div>
+								<button type="submit" class="btn btn-primary">Join</button>
+							</form>
+							<!-- login form // -->
+
+						</div>
+					</div>
+					<!-- form card // -->
+
 				</div>
 			</div>
 		</div>
+
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="js/index.js"></script>
 
 	</body>
 

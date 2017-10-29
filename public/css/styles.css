@@ -1,0 +1,86 @@
+html, body {
+	height: 100%;
+}
+
+.login-wrap,
+.main-wrap,
+.main-row {
+	height: 100%;
+}
+
+
+
+/*
+	LOGIN STYLES
+*/
+.login-wrap {
+	background-color: #476685;
+}
+
+.login-form-container {
+	transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	top: 50%;
+	position: absolute;
+}
+
+
+
+.users-list {
+	background-color: #476685;
+	color: #fff;
+	height: 100%;
+	overflow: auto;
+}
+
+.user-list-group .list-group-item {
+	background-color: transparent;
+	border-color: #eee;
+	padding: 5px 7px;
+}
+
+.user-info-wrapper {
+	margin-left: -15px;
+	background-color: transparent !important;
+}
+
+.user-form {
+	border-top: solid 1px #888;
+}
+
+.messenger-wrapper,
+.chat-room-wrapper {
+	height: 100%;
+}
+
+.chat-room-wrapper {
+	padding-bottom: 65px;
+}
+
+.messages-wraper {
+	height: 100%;
+	overflow-y: auto;
+}
+
+.form-wrapper,
+.user-info-wrapper {
+	background-color: #eee;
+	top: 100%;
+	height: 65px;
+	margin-top: -65px;
+	width: 100%;
+	position: absolute;
+}
+
+.form-wrapper .col-10
+/* .form-wrapper .col-2*/ {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.form-wrapper textarea {
+	height: 65px;
+	resize: none;
+}

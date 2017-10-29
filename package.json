@@ -1,11 +1,15 @@
 {
   "name": "node-chat-app",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "simple node chat app",
   "main": "index.js",
   "scripts": {
     "start": "node server/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha server/tests/*.test.js",
+    "test-watch": "nodemon --exec \"npm test\""
+  },
+  "engines": {
+    "node": "8.2.1"
   },
   "keywords": [
     "node",
@@ -15,6 +19,12 @@
   "author": "Rodrigo Hernando",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "moment": "^2.19.1",
+    "socket.io": "^1.4.8"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.5.3"
   }
 }
